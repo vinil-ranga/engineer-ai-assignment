@@ -13,7 +13,7 @@ class TweetsController < ApplicationController
   end
 
   def my_feed
-  # @tweets = Tweet
+  @tweets = @current_user.tweets
   end
 
   # GET /tweets/1
